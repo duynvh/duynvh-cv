@@ -47,8 +47,12 @@
 				                <li class="mb-3"><a href="https://www.linkedin.com/in/duy-nguyen-vo-hoang-44bb72161/" title="Linkedin" target="_blank"><span class="fa-container text-center mr-2">
 									<i class="fab fa-linkedin-in fa-fw"></i></span>@duynvh</a>
 								</li>
-				                <li class="mb-3">
+				        <li class="mb-3">
 									<a href="https://github.com/duynvh" title="Github" target="_blank"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>@duynvh</a>
+								</li>
+
+								<li class="mb-3">
+									<a id="saveAsPdfBtn" href="https://www.sejda.com/html-to-pdf?save-link=https%3A%2F%2Fduynvh.github.io%2Fduynvh-cv%2F">Save as PDF</a>
 								</li>
 								<!-- <li class="mb-3">
 									<a href="https://hackerrank.com/nhaancs" title="HackerRank" target="_blank"><span class="fa-container text-center mr-2"><i class="fab fa-hackerrank fa-fw"></i></span>@nhaancs</a>
@@ -139,7 +143,7 @@
 										    <div class="resume-position-time">Apr 2021 - Jun 2021</div>
 									    </div>
 									    <div class="resume-timeline-item-desc">
-											<p class="small text-muted mb-1">Personal blog APIs written in Golang, followed Clean architecture (open source: <a href="https://github.com/nhaancs/blog" target="_blank">github.com/nhaancs/blog</a>).</p>
+											<p class="small text-muted mb-1">Personal blog APIs written in Golang, followed Clean architecture (open source: <a href="https://github.com/duynvh/golang-blog-api" target="_blank">https://github.com/duynvh/golang-blog-api</a>).</p>
 											<ul class="pl-3 mb-2">
 												<li>Developed REST APIs with Gin, GORM and MySQL</li>
 												<li>Deployed with Docker to DigitalOcean</li>
@@ -355,6 +359,14 @@
 	    <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
 		<small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
     </footer>
+
+		<script>
+			document.getElementById('saveAsPdfBtn').addEventListener('click', function(e){
+				var pageUrl = encodeURIComponent(window.location.href);
+				window.open('https://www.sejda.com/html-to-pdf?save-link=' + pageUrl);
+				e.preventDefault();
+			});
+			</script>
 </body>
 </html> 
 
